@@ -14,3 +14,12 @@ unittest.TextTestRunner(verbosity=2).run(suite)
 from tests.homework.c_decisions import test_decisions
 
 suite = unittest.TestLoader().loadTestsFromModule(test_decisions)
+
+
+# tests/homework/d_repetition/run_tests.py
+
+import unittest
+from tests.homework.d_repetition import test_decisions
+
+suite = unittest.TestLoader().loadTestsFromModule(test_decisions)
+unittest.TextTestRunner().run(suite)
