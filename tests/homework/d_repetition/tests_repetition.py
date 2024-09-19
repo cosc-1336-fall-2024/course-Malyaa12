@@ -17,5 +17,3 @@ class Test_Config(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-python run_tests.py
