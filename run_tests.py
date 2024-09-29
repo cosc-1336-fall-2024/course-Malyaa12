@@ -23,3 +23,6 @@ from tests.homework.d_repetition import test_decisions
 
 suite = unittest.TestLoader().loadTestsFromModule(test_decisions)
 unittest.TextTestRunner().run(suite)
+
+
+from tests.homework.e_functions import test_functions
