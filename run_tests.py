@@ -26,3 +26,9 @@ unittest.TextTestRunner().run(suite)
 
 
 from tests.homework.e_functions import test_functions
+
+
+from tests.homework.h_strings.test_strings import Test_Config
+
+if __name__ == '__main__':
+    unittest.main()
