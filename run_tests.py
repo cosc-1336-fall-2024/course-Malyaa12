@@ -32,3 +32,7 @@ from tests.homework.h_strings.test_strings import Test_Config
 
 if __name__ == '__main__':
     unittest.main()
+
+from tests.homework.h_strings import test_strings
+
+suite = unittest.TestLoader().loadTestsFromModule(test_strings)
