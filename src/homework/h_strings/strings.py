@@ -83,6 +83,6 @@ def get_dna_complement(dna):
             complement += 'G'
         elif base == 'G':
             complement += 'C'
-    return complement[::-1]  # Reverse the complement string
+    return complement[::-1]  
 
 
