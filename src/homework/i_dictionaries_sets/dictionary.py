@@ -17,3 +17,24 @@ def get_p_distance_matrix(dna_lists):
                 p_distance_matrix[i][j] = get_p_distance(dna_lists[i], dna_lists[j])
     
     return p_distance_matrix
+
+
+
+
+
+def add_inventory(widgets, widget_name, quantity):
+    """Add or update widget inventory."""
+    if widget_name in widgets:
+        widgets[widget_name] += quantity 
+    else:
+        widgets[widget_name] = quantity  
+
+
+def remove_inventory_widget(widgets, widget_name):
+    """Remove a widget from inventory and return appropriate message."""
+    if widget_name in widgets:
+        del widgets[widget_name] 
+        return 'Record deleted'
+    else:
+        return 'Item not found'
+

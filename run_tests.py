@@ -39,3 +39,12 @@ suite = unittest.TestLoader().loadTestsFromModule(test_strings)
 
 
 from tests.homework.g_lists_and_tuples import tests_lists_and_tuples
+
+
+
+
+import unittest
+from tests.homework.i_dictionaries_and_sets.test_dictionaries_and_sets import Test_Config
+
+suite = unittest.TestLoader().loadTestsFromTestCase(Test_Config)
+unittest.TextTestRunner().run(suite)

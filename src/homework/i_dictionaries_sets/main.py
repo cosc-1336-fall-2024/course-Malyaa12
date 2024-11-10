@@ -30,3 +30,42 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+from src.homework.i_dictionaries_and_sets.dictionary import add_inventory, remove_inventory_widget
+
+
+inventory = {}
+
+def print_menu():
+    print("\nInventory Menu")
+    print("1 - Add or Update Item")
+    print("2 - Delete Item")
+    print("3 - Exit")
+
+def main():
+    while True:
+        print_menu()
+        choice = input("Choose an option (1/2/3): ")
+
+        if choice == '1':
+            widget_name = input("Enter widget name: ")
+            quantity = int(input("Enter quantity: "))
+            add_inventory(inventory, widget_name, quantity)
+            print(f"Inventory updated: {widget_name} now has {inventory[widget_name]} items.")
+
+        elif choice == '2':
+            widget_name = input("Enter widget name to delete: ")
+            result = remove_inventory_widget(inventory, widget_name)
+            print(result)
+
+        elif choice == '3':
+            print("Exiting program.")
+            break
+
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == '__main__':
+    main()
